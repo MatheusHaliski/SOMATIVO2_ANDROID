@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 
-@Database(entities = [Usuario::class, Pergunta::class, UserScore::class], version = 8)
+@Database(entities = [Usuario::class, Pergunta::class, UserScore::class], version = 10)
 @TypeConverters(Converters::class)  // Adicione isso para usar o TypeConverter
 abstract class QuizDatabase : RoomDatabase() {
     abstract fun usuarioDao(): UsuarioDao
